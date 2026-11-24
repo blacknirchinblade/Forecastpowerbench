@@ -1,0 +1,18 @@
+include .benchmark-device.env.example
+include *.sh
+include *.ipynb
+include REVIEW_NOTICE.md
+include THIRD_PARTY.md
+include requirements-test.txt
+recursive-include docs *.md *.tex *.bib
+recursive-include scripts *.sh *.md
+recursive-include dataset *.md
+recursive-include models *.md
+recursive-include tests *.py *.md
+recursive-include utils *.yaml *.json *.md
+recursive-include licenses *.txt
+prune results_unified
+prune all_hardwares_results
+prune test_results
+global-exclude *.py[cod]
+global-exclude __pycache__
